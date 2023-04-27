@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Hedy",
+      "imgUrl": "https://images.unsplash.com/photo-1491616569293-e27f7f4cd41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+      "email": "hedy@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Johnny",
+      "imgUrl": "https://images.unsplash.com/photo-1601482918584-4b194a7f2200?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "email": "hedy@gmail.com"
+    }
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "name": "台北行旅",
+      "imgUrl": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "address": "116 台北市文山區景中街30巷6號",
+      "tel": "02-2688-4528"
+    }
+  ],
+
+  "comments": [
+    {
+      "storeId": 1,
+      "userId": 1,
+      "anonymous": false,
+      "createDate": 1681915787,
+      "workHours": 3,
+      "workDays": 14,
+      "advantages": ["店家環境佳", "居住環境佳"],
+      "disadvantages": ["換宿制度不完整"],
+      "score": 5,
+      "description": "在換宿旅行中，我認識了許多來自世界各地的旅人，和他們分享了不同文化和故事。透過換宿，我體驗到當地人的生活方式，也探索了當地的美食和景點。換宿旅行讓我擁有了一個獨特的旅行經驗，讓我感受到旅行的魅力與樂趣。",
+      "like": [],
+      "dislike": []
+    }
+  ],
+  "msgs": [
+    {
+      "userId": 1,
+      "anonymous": false,
+      "commentId": 1,
+      "content": "感謝分享"
+    }
+  ]
+}
