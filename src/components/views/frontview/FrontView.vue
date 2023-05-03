@@ -1,6 +1,6 @@
 <template>
   <WrapContainer>
-    <el-card class="searchCard mb-4">
+    <el-card class="search-card mb-4">
       <h1>搜尋</h1>
 
       <el-form :inline="true" size="large">
@@ -67,13 +67,13 @@ const onSubmit = () => {
 </script>
 
 <style scoped>
-.searchCard {
+.search-card {
   text-align: center;
   background-image: url('../../../assets/imgs/searchBg.png');
   width: 100%;
 }
 
-.searchCard :v-deep(.el-card__body) {
+.search-card :v-deep(.el-card__body) {
   width: 100%;
 }
 
