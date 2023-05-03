@@ -11,12 +11,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'frontView',
-      component: () => import('../components/views/FrontView.vue'),
+      component: () => import('../components/views/frontview/FrontView.vue'),
       children: [
         {
           path: '/profile',
           name: 'profile',
-          component: () => import('../components/views/ProfileView.vue'),
+          component: () => import('../components/views/frontview/ProfileView.vue'),
         },
       ],
     },

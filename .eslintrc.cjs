@@ -13,6 +13,15 @@ module.exports = {
         extensions: ['.js', '.vue']
       }
     },
-    'import/core-modules': ['vite', '@vitejs/plugin-vue']
+    'import/core-modules': ['vite', '@vitejs/plugin-vue'],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false,
+        packageDir: './'
+      }
+    ]
   }
 }
