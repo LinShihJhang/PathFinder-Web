@@ -12,13 +12,16 @@ const router = createRouter({
       path: '/',
       name: 'frontView',
       component: () => import('../components/views/frontview/FrontView.vue'),
-      children: [
-        {
-          path: '/profile',
-          name: 'profile',
-          component: () => import('../components/views/frontview/ProfileView.vue'),
-        },
-      ],
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../components/views/frontview/ProfileView.vue'),
+    },
+    {
+      path: '/storeDetail/:id',
+      name: 'storeDetail',
+      component: () => import('../components/views/frontview/StoreDetail.vue'),
     },
   ],
 });

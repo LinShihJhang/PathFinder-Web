@@ -32,4 +32,8 @@
 .rounded {
   border-radius: 8px;
 }
+
+.router-link {
+  text-decoration: none;
+}
 </style>
