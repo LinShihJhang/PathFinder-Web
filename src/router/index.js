@@ -4,20 +4,16 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('../components/views/LoginView.vue'),
-    },
-    {
       path: '/',
-      name: 'frontView',
-      component: () => import('../components/views/frontview/FrontView.vue'),
+      name: 'home',
+      component: () => import('../components/views/frontview/HomeView.vue'),
     },
     {
-      path: '/profile',
-      name: 'profile',
-      component: () => import('../components/views/frontview/ProfileView.vue'),
+      path: '/searchStore/:keyWord?',
+      name: 'searchStore',
+      component: () => import('../components/views/frontview/SearchStore.vue'),
     },
+
     {
       path: '/storeDetail/:id',
       name: 'storeDetail',

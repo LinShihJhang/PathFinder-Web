@@ -4,14 +4,17 @@ module.exports = {
   root: true,
   extends: ['plugin:vue/vue3-essential', 'eslint:recommended', 'airbnb-base'],
   parserOptions: {
-    ecmaVersion: 'latest'
+    ecmaVersion: 'latest',
+  },
+  rules: {
+    'import/no-extraneous-dependencies': 'off',
   },
   settings: {
     'import/resolver': {
       alias: {
         map: [['@', './src']],
-        extensions: ['.js', '.vue']
-      }
+        extensions: ['.js', '.vue'],
+      },
     },
     'import/core-modules': ['vite', '@vitejs/plugin-vue'],
     'import/no-extraneous-dependencies': [
@@ -20,8 +23,8 @@ module.exports = {
         devDependencies: false,
         optionalDependencies: false,
         peerDependencies: false,
-        packageDir: './'
-      }
-    ]
-  }
-}
+        packageDir: './',
+      },
+    ],
+  },
+};

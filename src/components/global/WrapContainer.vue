@@ -8,9 +8,6 @@
 .wrap {
   margin: 20px auto;
   padding: 0 20px;
-  @media (max-width: 1199.99px) {
-    width: 100%;
-  }
 
   @media (min-width: 1200px) {
     max-width: 1200px;
