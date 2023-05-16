@@ -243,6 +243,7 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import WrapContainer from '../../global/WrapContainer.vue';
 
+// search
 const keyword = ref();
 const router = useRouter();
 const searchWord = (word) => {
@@ -251,6 +252,7 @@ const searchWord = (word) => {
   }
 };
 
+// back top
 const backSearch = () => {
   window.scrollTo({
     top: 0,
@@ -267,23 +269,5 @@ const backSearch = () => {
   background-position: bottom;
   width: 100%;
   padding: 64px 0;
-}
-
-.card-tag {
-  border-radius: 50px;
-  padding: 8px 16px;
-  text-align: center;
-  color: white;
-  background: #f48c2b;
-  display: inline-block;
-}
-
-.card-light-tag {
-  border-radius: 50px;
-  padding: 8px 16px;
-  text-align: center;
-  color: #f48c2b;
-  background: #fcf3e1;
-  display: inline-block;
 }
 </style>

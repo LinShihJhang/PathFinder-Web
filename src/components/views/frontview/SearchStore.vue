@@ -101,8 +101,9 @@ const searchWord = (word) => {
 // init
 onMounted(() => {
   const route = useRoute();
-  keyword.value = route.query.keyword;
+
   if (keyword.value) {
+    keyword.value = route.query.keyword;
     searchWord(keyword.value);
   } else {
     getAllStores();

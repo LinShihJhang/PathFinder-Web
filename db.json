@@ -50,10 +50,41 @@
       "score": 5,
       "description": "在換宿旅行中，我認識了許多來自世界各地的旅人，和他們分享了不同文化和故事。透過換宿，我體驗到當地人的生活方式，也探索了當地的美食和景點。換宿旅行讓我擁有了一個獨特的旅行經驗，讓我感受到旅行的魅力與樂趣。",
       "like": [],
-      "dislike": []
+      "dislike": [],
+      "replies": []
+    },
+    {
+      "storeId": 1,
+      "userId": 1,
+      "anonymous": false,
+      "createDate": 1681915787,
+      "workHours": 1,
+      "workDays": 10,
+      "advantages": ["店家環境佳", "居住環境佳"],
+      "disadvantages": ["換宿制度不完整"],
+      "score": 5,
+      "description": "在換宿旅行中，我認識了許多來自世界各地的旅人，和他們分享了不同文化和故事。透過換宿，我體驗到當地人的生活方式，也探索了當地的美食和景點。換宿旅行讓我擁有了一個獨特的旅行經驗，讓我感受到旅行的魅力與樂趣。",
+      "like": [1, 2],
+      "dislike": [],
+      "replies": []
+    },
+    {
+      "storeId": 1,
+      "userId": 2,
+      "anonymous": false,
+      "createDate": 1681915787,
+      "workHours": 9,
+      "workDays": 2,
+      "advantages": ["店家環境佳", "居住環境佳"],
+      "disadvantages": ["換宿制度不完整"],
+      "score": 5,
+      "description": "在換宿旅行中，我認識了許多來自世界各地的旅人，和他們分享了不同文化和故事。透過換宿，我體驗到當地人的生活方式，也探索了當地的美食和景點。換宿旅行讓我擁有了一個獨特的旅行經驗，讓我感受到旅行的魅力與樂趣。",
+      "like": [],
+      "dislike": [1, 2],
+      "replies": []
     }
   ],
-  "msgs": [
+  "replies": [
     {
       "id": 1,
       "userId": 1,
