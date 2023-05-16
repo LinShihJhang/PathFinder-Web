@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex align-center">
-    <h2 class="me-2 text-accent">{{ score }}</h2>
+    <h2 class="me-2 text-accent">{{ scoreValue.averageScore }}</h2>
     <el-rate
-      v-model="scoreValue.score"
+      v-model="scoreValue.averageScore"
       disabled
       :colors="['#F48C2B', '#F48C2B', '#F48C2B']"
       size="large"
