@@ -69,9 +69,9 @@ const getStore = () => {
   axios.get(`http://localhost:3000/stores/${route.params.id}?_embed=comments`).then((res) => {
     store.value = res.data;
     comments.value = store.value.comments;
-    averageDays.value = ref(getAverageInfo('workDays'));
-    averageHours.value = ref(getAverageInfo('workHours'));
-    averageScore.value = ref(getAverageInfo('score'));
+    averageDays.value = getAverageInfo('workDays');
+    averageHours.value = getAverageInfo('workHours');
+    averageScore.value = getAverageInfo('score');
   });
 };
 

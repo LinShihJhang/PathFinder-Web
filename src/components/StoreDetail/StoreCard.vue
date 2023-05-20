@@ -15,7 +15,7 @@
 
       <div>
         <h3>{{ props.store.name }}</h3>
-        <AverageRate :score="props.averageStoreInfo.averageScore"></AverageRate>
+        <AverageRate :averageScore="props.averageStoreInfo.averageScore"></AverageRate>
       </div>
     </div>
 

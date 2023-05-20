@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex align-center">
-    <h2 class="me-2 text-accent">{{ scoreValue.averageScore }}</h2>
+    <h2 class="me-2 text-accent">{{ props.averageScore }}</h2>
     <el-rate
       v-model="scoreValue.averageScore"
       disabled
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, ref, watch } from 'vue';
 
 const props = defineProps({
   averageScore: {
@@ -20,5 +20,13 @@ const props = defineProps({
   },
 });
 
-const scoreValue = { ...props };
+const scoreValue = ref({});
+watch(
+  () => props.averageScore,
+  (newVal, oldVal) => {
+    console.log(newVal);
+    console.log(oldVal);
+    scoreValue.value.averageScore = newVal;
+  },
+);
 </script>
